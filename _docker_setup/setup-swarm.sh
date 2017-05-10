@@ -116,7 +116,7 @@ function status {
 # Start RancherOS
 function startRancherOS {
   echo "-> Starting RancherOS to monitor the cluster"
-  docker-machine ssh manager1 docker run --name rancher --restart=unless-stopped -p 9000:8080 -d rancher/server
+  docker-machine ssh manager1 docker run --name rancher --restart=unless-stopped -p 9111:8080 -d rancher/server
 }
 
 function main {
